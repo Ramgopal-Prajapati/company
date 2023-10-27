@@ -1,0 +1,228 @@
+:root{
+    --green: #1a2a25;
+    --green-dark: #0d251c;
+    --light-grey: #f1f4f6;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* misc stylings */
+ul li{
+    list-style-type: none;
+}
+.container{
+    max-width: 1200px;
+    
+}
+.display-1{
+    letter-spacing: 1px;
+}
+.bg-green{
+    background-color: var(--green)!important;
+}
+.bg-grey{
+    background-color: var(--light-grey);
+}
+.text-green{
+    color: var(--green);
+}
+.btn{
+    border: 2px solid #fff;
+    border-radius: 1.5rem;
+    padding: 0.6rem 0;
+    width: 160px;
+}
+.btn-green{
+    background-color: var(--green);
+    color: #fff;
+    padding: 0.55rem 0;
+    width: 140px;
+}
+.btn-green:hover{
+    color: var(--green);
+    background: #fff;
+    border-color: var(--green);
+}
+.lh-lg{
+    line-height: 1.7!important;
+}
+.circle-icon{
+    width:55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: var(--green);
+}
+
+/* header */
+header{
+    height: 100vh;
+}
+.navbar-brand .fa{
+    font-size: 1.3rem;
+}
+.nav-icons p{
+    font-size: 1rem;
+    margin-right: 0.6rem;
+}
+.nav-icons{
+    font-size: 1.2rem;
+}
+.btn-header:hover{
+    background-color: #fff;
+    color: var(--green)!important;
+}
+.phone-img img{
+    width: 563px;
+    border-radius: 40px;
+   margin-bottom: 80px;
+}
+
+/* section 6 */
+#sec-6{
+    background: linear-gradient(rgba(22, 219, 147, 0.9), rgba(22, 219, 147, 0.9)), url(images/section-6-bg.jpg) center/cover no-repeat;
+   
+}
+#sec-6 .circle-icon{
+    width: 95px;
+    height: 95px;
+   
+}
+
+/* section 7 */
+#sec-7 .card{
+    border: none;
+ 
+}
+
+/* section 8 */
+#sec-8 .carousel-item img{
+    width: 200px!important;
+   
+    
+}
+
+/* section 9 */
+.pricing-item{
+    border-radius: 0.3rem;
+    overflow: hidden;
+    max-width: 340px;
+  
+    
+}
+.pricing-title{
+    background-color: var(--green-dark);
+}
+.pricing-price, .pricing-item ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 0.9rem 0;
+}
+.pricing-item .btn:hover{
+    background: transparent!important;
+    color: #fff;
+}
+
+
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    pad: 0px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+padding: 20px 8%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+} 
+nav img{
+
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    
+}
+nav ul button{
+    margin: 10px;
+}
+nav ul li a{
+
+    border: 2px solid green;
+    border-radius: 20%;
+    text-decoration: none;
+    color: rgb(245, 248, 248);
+    font-size: 20px;
+   
+    display: inline-block;
+}
+.main{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+}
+
+
+.main p:hover{
+    background-color: #1a2a25;
+}
+.main p{
+font-size: 25px;
+border: 2px solid green;
+width: 80%;
+height: 370px;
+margin: auto;
+padding: 14px 70px;
+border-top-right-radius: 20%;
+border-bottom-left-radius: 20%;
+backdrop-filter: blur(0);
+background-color: transparent ;
+color: #f8fbfa;
+font-weight: 700;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.video-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(2px);
+}
+@media (max-width: 768px) {
+    .main p {
+        width: 92%;
+        font-size: 19px; /* Adjust the font size for mobile screens */
+        /* Adjust the width for mobile screens */
+        height: auto; /* Allow the height to adjust based on content */
+        padding: 16px 30px; /* Modify the padding for mobile screens */
+        margin-left: 14px;
+        margin-top: 13px;
+        background-color: #1a2a25; /* Center the element on mobile screens */
+    }
+
+.main p :hover{
+    background-color: #0d251c;
+}
+#sec-1{
+    position: relative;
+    display: none;
+}
+}
